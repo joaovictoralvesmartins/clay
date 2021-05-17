@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.27.0](https://github.com/liferay/clay/compare/v3.26.0...v3.27.0) (2021-05-05)
+
+### Bug Fixes
+
+-   **@clayui/css:** Date Picker previous-month-date and next-month-date active should be lighter ([51a24f3](https://github.com/liferay/clay/commit/51a24f3))
+-   **@clayui/css:** Menubar convert old Sass map keys to key names so older keys used by previous versions will win ([9a1a73a](https://github.com/liferay/clay/commit/9a1a73a))
+-   **@clayui/css:** Menubar update `$menubar-vertical-expand-md` and `$menubar-vertical-expand-lg` to use new keys. Older keys will still win over new keys to preserve backward compatibility. ([12b9636](https://github.com/liferay/clay/commit/12b9636))
+-   **@clayui/css:** Mixins `clay-form-control-variant` old keys should win over new keys ([8986a81](https://github.com/liferay/clay/commit/8986a81)), closes [#3987](https://github.com/liferay/clay/issues/3987)
+-   **@clayui/css:** Mixins `clay-menubar-vertical-expand` use `clay-css` mixin pattern ([6a9ba26](https://github.com/liferay/clay/commit/6a9ba26))
+-   **@clayui/css:** Mixins `clay-menubar-vertical-variant` moves default styles to variables. The mixin should only output styles if values are given. ([703b76e](https://github.com/liferay/clay/commit/703b76e))
+-   **@clayui/css:** Progress Bar sets a `min-width` on `progress-group-addon` to prevent resizing progress bar when numbers are changed to icons ([63e63c0](https://github.com/liferay/clay/commit/63e63c0)), closes [#4024](https://github.com/liferay/clay/issues/4024)
+-   **@clayui/css:** Sass maps passed into `clay-form-control-variant` mixin should use new keys. This allows variable theme overwrites using deprecated keys to still win. ([f3be2d6](https://github.com/liferay/clay/commit/f3be2d6)), closes [#3987](https://github.com/liferay/clay/issues/3987)
+-   **@clayui/date-picker:** DatePickerDayNumber use the classes `previous-month-date` and `next-month-date` to style day outside the month instead of `disabled` ([f25ab71](https://github.com/liferay/clay/commit/f25ab71)), closes [#4036](https://github.com/liferay/clay/issues/4036)
+-   **@clayui/shared:** add unit test for FocusScope ([f84332f](https://github.com/liferay/clay/commit/f84332f))
+-   **@clayui/shared:** update and simplify logic for focus management when focus moves in and out of the react tree ([e3a100f](https://github.com/liferay/clay/commit/e3a100f))
+
+### Features
+
+-   **@clayui/css:** SVG Icons add rotate ([0fec9ce](https://github.com/liferay/clay/commit/0fec9ce))
+-   **@clayui/css:** SVG Icons adds `order-list-down` and `order-list-up` ([f80f8a0](https://github.com/liferay/clay/commit/f80f8a0)), closes [#4021](https://github.com/liferay/clay/issues/4021)
+-   **@clayui/multi-select:** add async functionality for source items ([548aa2d](https://github.com/liferay/clay/commit/548aa2d))
+-   **@clayui/panel:** adds the small API to Panel.Group ([b8428dc](https://github.com/liferay/clay/commit/b8428dc))
+-   **@clayui/popover:** add observeRect to align the popover on the scroll ([8bedd2f](https://github.com/liferay/clay/commit/8bedd2f))
+
+# [3.26.0](https://github.com/liferay/clay/compare/v3.25.4...v3.26.0) (2021-04-21)
+
+### Bug Fixes
+
+-   **@clayui/date-picker:** Adjusts the behaviour of date range when clicking on the dot button ([f6db982](https://github.com/liferay/clay/commit/f6db982)), closes [/github.com/liferay/clay/pull/4008#issuecomment-819244473](https://github.com//github.com/liferay/clay/pull/4008/issues/issuecomment-819244473)
+-   **@clayui/date-picker:** fixes error when not selecting date when the time is invalid ([861de91](https://github.com/liferay/clay/commit/861de91))
+-   **@clayui/date-picker:** fixes error when reflecting the time without having selected the date ([80409f5](https://github.com/liferay/clay/commit/80409f5))
+-   **@clayui/date-picker:** fixes normalization error for the day selected and button to change to the current day ([a058e7f](https://github.com/liferay/clay/commit/a058e7f))
+-   **@clayui/date-picker:** fixes normalization of the date ([cdbad89](https://github.com/liferay/clay/commit/cdbad89))
+-   **@clayui/date-picker:** resets the range when selecting a new date ([639d2af](https://github.com/liferay/clay/commit/639d2af))
+-   **@clayui/date-picker:** Small tweaks ([d6ead55](https://github.com/liferay/clay/commit/d6ead55))
+-   **@clayui/date-picker:** Use `toDateString` instead of `toLocaleDateString` on Day button ([2710760](https://github.com/liferay/clay/commit/2710760))
+-   **@clayui/date-picker:** When having a range and clicking on end date again the start date will be the same as the end date ([4e1cd07](https://github.com/liferay/clay/commit/4e1cd07)), closes [/github.com/liferay/clay/pull/4008#issuecomment-819244473](https://github.com//github.com/liferay/clay/pull/4008/issues/issuecomment-819244473)
+-   **@clayui/date-picker:** When using `fromStringToRange` function, when not finding a endDate, just use the startDate ([a6c1d00](https://github.com/liferay/clay/commit/a6c1d00))
+-   **@clayui/date-picker:** Wrap day and weekdays in `<div class="date-picker-col">` to prep for Date Range feature ([512c2a4](https://github.com/liferay/clay/commit/512c2a4))
+
+### Features
+
+-   **@clayui/alert:** Adds the new feedback variant ([1e0a65a](https://github.com/liferay/clay/commit/1e0a65a))
+-   **@clayui/css:** Alerts adds `alert-feedback` modifier ([51b57e6](https://github.com/liferay/clay/commit/51b57e6)), closes [#3968](https://github.com/liferay/clay/issues/3968)
+-   **@clayui/css:** Date Picker adds Date Range styles ([a385e6a](https://github.com/liferay/clay/commit/a385e6a))
+-   **@clayui/date-picker:** Adds ClayDatePicker Range variation ([eee769d](https://github.com/liferay/clay/commit/eee769d))
+
+## [3.25.4](https://github.com/liferay/clay/compare/v3.25.3...v3.25.4) (2021-04-07)
+
+### Bug Fixes
+
+-   **@clayui/date-picker:** Date Navigation Controls are wrong color. This adds clay css classes but also leaves btn-monospaced and btn-sm just incase. ([850286e](https://github.com/liferay/clay/commit/850286e))
+-   **@clayui/date-picker:** disable focus control using the arrow keys ([d21dd7d](https://github.com/liferay/clay/commit/d21dd7d))
+-   **@clayui/date-picker:** Removes `btn-sm` and `btn-monospaced` from Date Navigation controls. They're not needed. ([e70ad3c](https://github.com/liferay/clay/commit/e70ad3c))
+
+## [3.25.3](https://github.com/liferay/clay/compare/v3.25.2...v3.25.3) (2021-03-24)
+
+### Bug Fixes
+
+-   **@clayui/css:** Atlas Menubar (Vertical Navigation) link active state should be more visible ([5a94cfd](https://github.com/liferay/clay/commit/5a94cfd))
+-   **@clayui/css:** Menubar toggler with c-inner cuts off caret icon ([1932782](https://github.com/liferay/clay/commit/1932782))
+-   **@clayui/css:** Mixins `clay-link` adds option to style `&.show, &[aria-expanded='true']` separately from `active-class` so we can style panel toggles ([8a1a148](https://github.com/liferay/clay/commit/8a1a148))
+-   **@clayui/multi-select:** Use `btn-outline-secondary btn-outline-borderless` instead of `btn-unstyled` for Clear All Button ([3d71cf0](https://github.com/liferay/clay/commit/3d71cf0))
+
 ## [3.25.2](https://github.com/liferay/clay/compare/v3.25.1...v3.25.2) (2021-03-10)
 
 ### Bug Fixes

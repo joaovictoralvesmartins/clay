@@ -5,12 +5,15 @@
 
 export const noop = () => {};
 export {ClayPortal} from './Portal';
+export {delegate} from './delegate';
 export {FocusScope} from './FocusScope';
 export {getEllipsisItems} from './getEllipsisItems';
 export {Keys} from './Keys';
 export {LinkOrButton} from './LinkOrButton';
 export {sub} from './sub';
+export {observeRect} from './observeRect';
 export {useDebounce} from './useDebounce';
-export {useFocusManagement} from './useFocusManagement';
+export {useFocusManagement, FOCUSABLE_ELEMENTS} from './useFocusManagement';
 export {setElementFullHeight} from './setElementFullHeight';
-export {useInternalState, TInternalStateOnChange} from './useInternalState';
+export {useInternalState} from './useInternalState';
+export type {TInternalStateOnChange} from './useInternalState';

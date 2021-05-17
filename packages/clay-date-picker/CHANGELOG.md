@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.27.0](https://github.com/liferay/clay/compare/v3.26.0...v3.27.0) (2021-05-05)
+
+### Bug Fixes
+
+-   **@clayui/date-picker:** DatePickerDayNumber use the classes `previous-month-date` and `next-month-date` to style day outside the month instead of `disabled` ([f25ab71](https://github.com/liferay/clay/commit/f25ab71)), closes [#4036](https://github.com/liferay/clay/issues/4036)
+
+# [3.26.0](https://github.com/liferay/clay/compare/v3.25.4...v3.26.0) (2021-04-21)
+
+### Bug Fixes
+
+-   **@clayui/date-picker:** Adjusts the behaviour of date range when clicking on the dot button ([f6db982](https://github.com/liferay/clay/commit/f6db982)), closes [/github.com/liferay/clay/pull/4008#issuecomment-819244473](https://github.com//github.com/liferay/clay/pull/4008/issues/issuecomment-819244473)
+-   **@clayui/date-picker:** fixes error when not selecting date when the time is invalid ([861de91](https://github.com/liferay/clay/commit/861de91))
+-   **@clayui/date-picker:** fixes error when reflecting the time without having selected the date ([80409f5](https://github.com/liferay/clay/commit/80409f5))
+-   **@clayui/date-picker:** fixes normalization error for the day selected and button to change to the current day ([a058e7f](https://github.com/liferay/clay/commit/a058e7f))
+-   **@clayui/date-picker:** fixes normalization of the date ([cdbad89](https://github.com/liferay/clay/commit/cdbad89))
+-   **@clayui/date-picker:** resets the range when selecting a new date ([639d2af](https://github.com/liferay/clay/commit/639d2af))
+-   **@clayui/date-picker:** Small tweaks ([d6ead55](https://github.com/liferay/clay/commit/d6ead55))
+-   **@clayui/date-picker:** Use `toDateString` instead of `toLocaleDateString` on Day button ([2710760](https://github.com/liferay/clay/commit/2710760))
+-   **@clayui/date-picker:** When having a range and clicking on end date again the start date will be the same as the end date ([4e1cd07](https://github.com/liferay/clay/commit/4e1cd07)), closes [/github.com/liferay/clay/pull/4008#issuecomment-819244473](https://github.com//github.com/liferay/clay/pull/4008/issues/issuecomment-819244473)
+-   **@clayui/date-picker:** When using `fromStringToRange` function, when not finding a endDate, just use the startDate ([a6c1d00](https://github.com/liferay/clay/commit/a6c1d00))
+-   **@clayui/date-picker:** Wrap day and weekdays in `<div class="date-picker-col">` to prep for Date Range feature ([512c2a4](https://github.com/liferay/clay/commit/512c2a4))
+
+### Features
+
+-   **@clayui/date-picker:** Adds ClayDatePicker Range variation ([eee769d](https://github.com/liferay/clay/commit/eee769d))
+
+## [3.25.4](https://github.com/liferay/clay/compare/v3.25.3...v3.25.4) (2021-04-07)
+
+### Bug Fixes
+
+-   **@clayui/date-picker:** Date Navigation Controls are wrong color. This adds clay css classes but also leaves btn-monospaced and btn-sm just incase. ([850286e](https://github.com/liferay/clay/commit/850286e))
+-   **@clayui/date-picker:** disable focus control using the arrow keys ([d21dd7d](https://github.com/liferay/clay/commit/d21dd7d))
+-   **@clayui/date-picker:** Removes `btn-sm` and `btn-monospaced` from Date Navigation controls. They're not needed. ([e70ad3c](https://github.com/liferay/clay/commit/e70ad3c))
+
 ## [3.25.1](https://github.com/liferay/clay/compare/v3.25.0...v3.25.1) (2021-03-05)
 
 **Note:** Version bump only for package @clayui/date-picker
